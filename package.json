@@ -1,0 +1,38 @@
+{
+  "name": "fetch-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "fetch-api.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "babel fetch-api.es6 -o fetch-api.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iofjuupasli/fetch-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iofjuupasli/fetch-api/issues"
+  },
+  "homepage": "https://github.com/iofjuupasli/fetch-api#readme",
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-eslint": "^7.0.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "eslint": "^3.8.0",
+    "eslint-config-airbnb-base": "^9.0.0",
+    "eslint-plugin-import": "^2.0.1"
+  },
+  "babel": {
+    "presets": [
+      "stage-0",
+      "latest"
+    ],
+    "plugins": [
+      "transform-class-properties"
+    ]
+  }
+}
