@@ -34,5 +34,9 @@
     "plugins": [
       "transform-class-properties"
     ]
+  },
+  "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
+    "querystring": "^0.2.0"
   }
 }
