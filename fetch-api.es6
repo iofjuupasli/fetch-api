@@ -14,6 +14,7 @@ export default ({
   baseApiUrl,
   apiPrefix,
   defaultQueryStringObject,
+  headers,
 }) => {
   const buildUrl = (path, queryStringObject = {}) =>
     `${baseApiUrl}/${apiPrefix}/${path}?${qs.stringify({ ...defaultQueryStringObject, ...queryStringObject })}`;
@@ -34,11 +35,13 @@ export default ({
 
   const getJsonHeaders = {
     Accept: 'application/json',
+    ...headers,
   };
 
   const postJsonHeaders = {
     ...getJsonHeaders,
     'Content-Type': 'application/json',
+    ...headers,
   };
 
   const get = (path, queryStringObject) =>
